@@ -1,18 +1,15 @@
 class Rolodex
 	attr_reader :contacts
-	
+
 	def initialize
 		@contacts = []		#empty array to accept new contacts
 		@id = 1000
 	end
 
-	def create_contact(first_name, last_name, email, notes)	#adding a contact
-		contact = Contact.new	#do Contact.new to create a new object (contact)
-		contact.first_name = first_name
-		contact.last_name = last_name
-		contact.email = email
-		contact.notes = notes+"\n"
+	def create_contact(contact)	#adding a contact
+		contactiid = @id
 		@contacts << contact 	#pushes the new contact into the array
+		@id += 1
 	end
 
 	def display_contacts		#display all contacts
