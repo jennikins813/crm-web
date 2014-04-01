@@ -3,10 +3,11 @@
   <head></head>
   <body>
     <h1>Contacts Page</h1>
-    <p>Contact List</p>
+    <p>All Contacts</p>
     <ul>
-		  <li><a href="/contacts">View all contacts</a></li>
-      <li><a href="/contacts">Return to Main Menu</a></li>
-	  </ul>
+    <% @contacts.each do |contact| %>
+		<li><%= contact.first_name %> <%= contact.last_name %></li>
+    <% end %> 
+	</ul>
   </body>
 </html>
