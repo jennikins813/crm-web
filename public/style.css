@@ -1,0 +1,16 @@
+body {
+	background-color: White ;
+}
+
+p {
+	font-family: "Lucida Grande" ;
+}
+
+.column {
+	background-color: Gainsboro;
+	border: 1px solid #666;
+	padding: 5px;
+	margin: 5px;
+	width: 50%;
+	float: left;
+}
