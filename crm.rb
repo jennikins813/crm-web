@@ -9,12 +9,16 @@ get '/' do
 	erb :index
 end
 
-get "/contacts" do
+get '/contacts' do
 	erb :contacts
 end
 
 get '/contacts/new' do 
 	erb :new_contact			
+end
+
+get '/contacts/:id/delete' do 
+	"Delete a contact"	
 end
 
 post '/contacts' do

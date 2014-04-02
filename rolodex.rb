@@ -7,7 +7,7 @@ class Rolodex
 	end
 
 	def create_contact(contact)	#adding a contact
-		contactiid = @id
+		contact.id = @id
 		@contacts << contact 	#pushes the new contact into the array
 		@id += 1
 	end
