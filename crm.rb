@@ -26,7 +26,7 @@ get '/contacts/:id/edit' do
 end
 
 get '/contacts/:id/delete' do 
-	"Delete a contact"	
+	"Delete a contact"	 ## is this correct??
 end
 
 post '/contacts' do
