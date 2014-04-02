@@ -17,7 +17,7 @@ get '/contacts/new' do
 	erb :new_contact			
 end
 
-get '/contacts/:id/delete' do 
+delete '/contacts/:id/delete' do 
 	"Delete a contact"	
 end
 

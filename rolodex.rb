@@ -6,23 +6,23 @@ class Rolodex
 		@id = 1000
 	end
 
-	def create_contact(contact)	#adding a contact
+	def create_contact(contact)	
 		contact.id = @id
 		@contacts << contact 	#pushes the new contact into the array
 		@id += 1
 	end
 
-	def display_contacts		#display all contacts
+	def display_contacts		
 		@contacts.each do |contact|
 			puts contact
 		end
 	end
 
-	def delete_contact(id)		#delete a contact
+	def delete_contact(id)		
 		@contacts.delete_if {|c| c.id == id}
 	end
 
-	def show_specific_contact(id)		#display a specific contact
+	def show_specific_contact(id)
 		@contacts.each do |contact|
 			if contact.id == id
 			puts contact
@@ -36,7 +36,7 @@ class Rolodex
 		end
 	end
 
-	def display_byattribute_email			#display contacts by attribute
+	def display_byattribute_email			
 		@contacts.each do |contact|
 			puts contact.email
 		end
@@ -74,14 +74,3 @@ class Rolodex
 		end
 	end
 end
-
-#
-#    def remove_contact(id)       #nn intro a concept of an ID/id
-#         result = nil
-#         @contacts.each do |contact|
-#              if contact.id == id
-#                  result = contact
-#              end
-#         end
-#         @contacts.delete(result) if result != nil
-#    end
