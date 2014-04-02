@@ -6,7 +6,7 @@ require 'sinatra'
 
 get '/' do
 	@crm_app_name = "My CRM!"
-	erb :index
+	erb :index, :layout => :layout
 end
 
 get '/contacts' do
@@ -17,7 +17,15 @@ get '/contacts/new' do
 	erb :new_contact			
 end
 
-delete '/contacts/:id/delete' do 
+get '/contacts/:id' do
+	## what do I put in here?!!
+end
+
+get '/contacts/:id/edit' do
+	## what do I put in here?!!
+end
+
+get '/contacts/:id/delete' do 
 	"Delete a contact"	
 end
 
