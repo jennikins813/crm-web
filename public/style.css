@@ -1,16 +1,36 @@
-body {
-	background-color: White ;
+*{
+	-moz-box-sizing: border-box; 	        /*i don't remember what this does*/
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-p {
-	font-family: "Lucida Grande" ;
+html {
+	background-color: White ;
+	background: url(http://images2.alphacoders.com/186/186192.jpg) no-repeat center left fixed;
 }
+
+body {
+	font-family: "Century Gothic";
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+	height: 30px;
+	color: White;
+}
+
+nav {
+
+}
+
 
 .column {
 	background-color: Gainsboro;
 	border: 1px solid #666;
 	padding: 5px;
 	margin: 5px;
-	width: 50%;
+	width: 20%;
 	float: left;
 }
