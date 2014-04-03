@@ -1,10 +1,10 @@
 class Contact
-	@@customer = 1000
+	#@@customer = 1000
 
 	attr_accessor :id, :first_name, :last_name, :email, :notes 
 
 	def initialize(first_name,last_name,email,notes)
-		@id = Contact.get_id 	# >>> not sure I still need this here....
+		#@id = Contact.get_id 	# >>> not sure I still need this here....
 		@first_name = first_name
 		@last_name = last_name
 		@email = email

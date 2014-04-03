@@ -22,13 +22,19 @@ class Rolodex
 		@contacts.delete_if {|c| c.id == id}
 	end
 
-	def show_specific_contact(id)
-		@contacts.each do |contact|
-			if contact.id == id
-			puts contact
-			end
+	def find(contact_id)
+		@contacts.find do |contact|
+			contact.id == contact_id
 		end
 	end
+
+	#def show_specific_contact(id)
+	#	@contacts.each do |contact|
+	#		if contact.id == id
+	#		puts contact
+	#		end
+	#	end
+	#end
 
 	def display_byattribute_name			#display contacts by attribute
 		@contacts.each do |contact|

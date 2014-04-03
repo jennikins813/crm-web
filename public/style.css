@@ -6,12 +6,11 @@
 
 html {
 	background-color: White ;
-	background: url(http://images2.alphacoders.com/186/186192.jpg) no-repeat center left fixed;
 }
 
 body {
 	font-family: "Century Gothic";
-	color: White;
+	color: Black; 					/* had this as white*/
 }
 
 h1 {
@@ -23,7 +22,7 @@ footer {
 	bottom: 0;
 	width: 50%;
 	height: 30px;
-	color: White;
+	color: Black;		/* had this as white*/
 }
 
 input,textarea {  				/*test these "input ids" (on the form part*/

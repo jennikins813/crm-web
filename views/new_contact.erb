@@ -1,13 +1,13 @@
 <h1>Create New Contact</h1>
 
 <form action="/contacts" method="post">        <!-- verbs supported by form: post,get-->
-  First Name: <input type="text" name="first_name" autofocus required="required" placeholder="yo first name"> 
-  Last Name: <input type="text" name="last_name" autofocus placeholder="yo last name">
-  E-mail Address: <input type="text" name="email" value="e-mail">
-  Notes: <input type="text" name="notes" value="notes">
-  <input type="submit" name="Submit" value="Create Contact"/>  <!-- do i need the "/" at the end??-->
+  <strong>First Name:</strong> <input type="text" name="first_name" autofocus placeholder="yo first name"> 
+  <strong>Last Name:</strong> <input type="text" name="last_name" required="required" placeholder="yo last name">
+  <strong>E-mail Address:</strong> <input type="text" name="email" placeholder="e-mail">
+  <strong>Notes:</strong> <input type="text" name="notes" placeholder="notes">
+  <input type="submit" name="Submit" value="Save Contact"/>  <!-- do i need the "/" at the end??-->
 </form>
-<p><a href="/">Home Page</a> </p> 
+
 
 <!--input: main form control; nn specify a type, name, etc.-->
   <!--textarea:another control; nn give a name; eg. <textarea name ="notes"></textarea> -->
