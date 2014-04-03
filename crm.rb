@@ -10,7 +10,7 @@ get '/' do
 end
 
 get '/contacts' do
-	erb :contacts
+	erb :contacts, :layout => :layout
 end
 
 get '/contacts/new' do 
@@ -18,14 +18,14 @@ get '/contacts/new' do
 end
 
 get '/contacts/:id' do
-	## what do I put in here?!!
+	## erb: index? what do I put in here?!!
 end
 
 get '/contacts/:id/edit' do
 	## what do I put in here?!!
 end
 
-get '/contacts/:id/delete' do 
+get '/contacts/:id/delete' do  ## or do i use delete iso get??
 	"Delete a contact"	 ## is this correct??
 end
 
@@ -34,3 +34,12 @@ post '/contacts' do
 	@@rolodex.create_contact(new_contact)
 	redirect to('/contacts')
 end
+
+
+#everything the user sends (url, form control), it's access thru the params
+
+
+
+
+
+

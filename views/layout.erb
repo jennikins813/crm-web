@@ -6,26 +6,28 @@
 	</head>
 
 	<body>
+	<h1>Welcome to <%= @crm_app_name %> </h1>
 	<%= yield %>
-		<header>
+		<header class="mainheader">
 		wtf!
 		<p>hello</p>
-		 </header>
-
-		
-	<br />
-
-	<div class="column">
+		 </header>	 
+	<nav>
+		<ul>
+		<li><a href="/contacts">View all contacts</a></li>
+	 	<li><a href="/contacts/new">Create new contact</a></li>
+		<li><a href="/contacts/:id/edit">Edit contact</a></li>      <!--did not create yet-->
+		<li><a href="/contacts/:id/delete">Delete contact</a></li>  <!--did not create yet-->
+		</ul>
+	</nav>
+		<div class="column">
 		<h3 class="column1"></h3>
 	</div>
-
-	<nav>
-		<a href="/contacts">View all contacts</a>
-		<br />
-		<a href="/contacts/new">Create new contact</a>
-	</nav>
-
 	<footer> @jennikins </footer>
+	
 
 	</body>
 </html>
+
+
+<!--header tag replaces div id="header">

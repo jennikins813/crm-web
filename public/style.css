@@ -11,6 +11,11 @@ html {
 
 body {
 	font-family: "Century Gothic";
+	color: White;
+}
+
+h1 {
+	text-align: center;
 }
 
 footer {
@@ -21,8 +26,14 @@ footer {
 	color: White;
 }
 
-nav {
+input,textarea {  				/*test these "input ids" (on the form part*/
+	width: 100px;
+	border: 1px solid: #999;
+	line-height: 1.2rem;
+}
 
+input[type=submit] {  			/*test these "input ids" (on the form part*/
+	width: 100px;
 }
 
 
