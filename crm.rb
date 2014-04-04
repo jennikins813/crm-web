@@ -7,9 +7,6 @@ require 'sinatra'
 
 @@rolodex = Rolodex.new
 
-@@rolodex.create_contact(Contact.new("Jen", "F", "email@gmail.com", "Student"))
-
-
 get '/' do
 	erb :index
 end
@@ -61,7 +58,7 @@ put "/contacts/:id" do
 end
 
 
-delete "/contacts/:id/delete" do
+delete "/contacts/:id" do
 	@contact = @@rolodex.find(params[:id].to_i)
 	if @contact
 		@@rolodex.delete_contact(@contact)
