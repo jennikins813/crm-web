@@ -18,14 +18,14 @@ class Rolodex
 		end
 	end
 
-	def delete_contact(id)		
-		@contacts.delete_if {|c| c.id == id}
-	end
-
 	def find(contact_id)
 		@contacts.find do |contact|
 			contact.id == contact_id
 		end
+	end
+
+	def delete_contact(contact)		
+		@contacts.delete(contact)
 	end
 
 	#def show_specific_contact(id)
@@ -36,47 +36,47 @@ class Rolodex
 	#	end
 	#end
 
-	def display_byattribute_name			#display contacts by attribute
-		@contacts.each do |contact|
-			puts contact.last_name + "," +contact.first_name
-		end
-	end
+	#def display_byattribute_name			#display contacts by attribute
+	#	@contacts.each do |contact|
+	#		puts contact.last_name + "," +contact.first_name
+	#	end
+	#end
 
-	def display_byattribute_email			
-		@contacts.each do |contact|
-			puts contact.email
-		end
-	end
+	#def display_byattribute_email			
+	#	@contacts.each do |contact|
+	#		puts contact.email
+	#	end
+	#end
 
-	def edit_first_name(id, first_name)
-		@contacts.each do |contact|
-			if contact.id == id
-				contact.first_name = first_name
-			end
-		end
-	end
+	#def edit_first_name(id, first_name)
+	#	@contacts.each do |contact|
+	#		if contact.id == id
+	#			contact.first_name = first_name
+	#		end
+	#	end
+	#end
 
-	def edit_last_name(id, last_name)
-		@contacts.each do |contact|
-			if contact.id == id
-				contact.last_name = last_name
-			end
-		end
-	end
+	#def edit_last_name(id, last_name)
+	#	@contacts.each do |contact|
+	#		if contact.id == id
+	#			contact.last_name = last_name
+	#		end
+	#	end
+	#end
 
-	def edit_email(id, email)	
-		@contacts.each do |contact|
-			if contact.id == id
-				contact.email = email
-			end
-		end
-	end
+	#def edit_email(id, email)	
+	#	@contacts.each do |contact|
+	#		if contact.id == id
+	#			contact.email = email
+	#		end
+	#	end
+	#end
 
-	def edit_notes(id, notes)
-		@contacts.each do |contact|
-			if contact.id == id
-				contact.notes = notes
-			end
-		end
-	end
+	#def edit_notes(id, notes)
+	#	@contacts.each do |contact|
+	#		if contact.id == id
+	#			contact.notes = notes
+	#		end
+	#	end
+	#end
 end

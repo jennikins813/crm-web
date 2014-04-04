@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> JEN CRM </title>
 		<link rel="stylesheet" type="text/css" href="/style.css">
+		<title> JEN CRM </title>
+		
 	</head>
 
 	<body>
-	<h1>Welcome to <%= @crm_app_name %> </h1>
+	<h1>Welcome to MY wtf CRM </h1>
 	<%= yield %>
+	
+	hello
 		<header class="mainheader">
-		wtf!
-		<p>hello</p>
-		 </header>	 
-	<nav>
-		<ul>
-		<li><a href="/contacts">View all contacts</a></li>
-	 	<li><a href="/contacts/new">Create new contact</a></li>
-	 	<li><a href="/contacts/1000">Look up contact</a></li>
-		<li><a href="/contacts/:id/edit">Edit contact</a></li>      <!--did not create yet-->
-		<li><a href="/contacts/:id/delete">Delete contact</a></li>  <!--did not create yet-->
-		</ul>
+		<br />
+		<!--
+			<img src="Client-Relationship-Management.jpeg"/>   -->
+			<nav><ul>
+				<strong><li><a href="/contacts">View all contacts</a></li></strong>
+	 			<strong><li><a href="/contacts/new">Create new contact</a></li></strong>
+	 			<strong><li><a href="/contacts/1000">Look up contact</a></li></strong>
+				<!--<li><a href="/contacts/:id/edit">Edit contact</a></li> 
+				<li><a href="/contacts/:id/delete">Delete contact</a></li>  -->
+			</ul></nav>
 		<p><a href="/">Home Page</a> </p> 
-	</nav>
-	<div class="column">
+	
+	 </header>	 
+
+	<!--<div class="column">
 	<h3 class="column1"></h3>
-	</div>
+	</div> -->
+
 	<footer> @jennikins </footer>
 	
 
