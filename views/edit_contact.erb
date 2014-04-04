@@ -1,4 +1,4 @@
-<h1>Edit a Contact</h1>
+<h2>Edit a Contact</h2>
 
 <form action="/contacts/ <%= @contact.id %>" method="post"> 
 	<input type="hidden" name="_method" value="put">
@@ -10,7 +10,8 @@
 	<input type="text" name="email" value="<%= @contact.email %>">
 	<strong>Notes:</strong>
 	<input type="text" name="notes" value="<%= @contact.notes %>">
+	<input type="submit" name="Submit" value="Confirm Edit">
 	<br />
 
-	<input type="submit" name="Confirm Edit">
+	
 </form>

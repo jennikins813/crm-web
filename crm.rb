@@ -5,7 +5,6 @@ require 'sinatra'
 
 #DataMapper.setup(:default, "sqlite3:database.sqlite3")
 
-#contact = @@rolodex.find(1000)
 @@rolodex = Rolodex.new
 
 @@rolodex.create_contact(Contact.new("Jen", "F", "email@gmail.com", "Student"))
@@ -47,7 +46,7 @@ get "/contacts/:id/edit" do
 	end
 end
 
-put "/contacts/:id/edit" do
+put "/contacts/:id" do
 	@contact = @@rolodex.find(params[:id].to_i)
 	if @contact
 		@contact.first_name = params[:first_name]
