@@ -5,27 +5,31 @@
 }
 
 html {
-	background-color: White ; 			
+	background-color: White;
+	background: url(boracayislandsunset.jpg) no-repeat center left fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 			
 }
 
 body {
-	font-family: "Century Gothic";
-	color: Blue; 					/* had this as white*/
+	font-family: "Century Gothic", sans-serif;
+	color: White; 				
 }
 
 h1 {
-	text-align: center;
-}
-.mainheader img {
-	width: 300px;
-	height: auto;  
-	margin: 2% 0;
+	text-align: left;
+	padding: 6px;
 }
 
+
 .mainheader nav {
-	background-color: rgba(200, 200, 200, 0.6);
+	font-size: 20px;
+	background-color: rgba(200, 200, 300, 0.4);
 	height: 40px;
 	border-radius: 5px;
+	width: 80%;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
@@ -41,15 +45,16 @@ h1 {
 }
 
 .mainheader nav a:link, .mainheader nav a:visited {
-	color: #232DFF;
+	color: #0F4298;
 	display: inline-block;
-	padding: 10px 25px;
+	padding: 8px 20px;
+	padding-left: 1px;
 	height: 20px
 }
 
 .mainheader nav a:hover, .mainheader nav .active a:link, 
 .mainheader nav .active a:visited {
-	background-color: white;
+	background-color: #FF6334;
 	height: 40px;
 	text-shadow: none;
 }
@@ -57,19 +62,61 @@ h1 {
 .mainheader nav ul li a {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
-	-webkit-border-radius: px;
+	-webkit-border-radius: 5px;
+}
+
+.intro {
+	color: yellow;
+	position: absolute;
+	width: 40%;
+	top: 15%;
+	padding: 15px;
+	margin-top: 4%;
+	background-color: rgba(200, 200, 300, 0.4);
+	border-radius: 10px;
+}
+.intro h2 {
+	font-size: 2.0rem;
+	line-height: 1.0rem;
+	font-family: "Lucida Grande", "Georgia";
+}
+
+.right-col {
+	background-color: rgba(200, 200, 300, 0.3);        /* #DAD5C1*/
+	width: 20%;
+	float: right;
+	margin-top: 2%;
+	padding: 3px;
+	border-radius: 10px; 	
+}
+
+.right-col p {
+	font-size: 0.9em;
+}
+
+.social img {
+	position: relative;
+	margin: 2%;
+	padding: 2px;
+	height: 50px;
+	width: 50px;
 }
 
 footer {
 	position: absolute;
 	bottom: 0;
-	width: 50%;
+	width: 30%;
 	height: 30px;
-	color: White;		/* had this as white*/
+	text-align: center;
+	padding: 5px;
+	color: White;
+	background-color: rgba(200, 200, 300, 0.4);
+	border-radius: 20px;
+	margin: 5px 2px;
 }
 
 input,textarea {  				/*test these "input ids" (on the form part*/
-	width: 100px;
+	width: 200px;
 	border: 1px solid: #999;
 	line-height: 1.2rem;
 }
@@ -78,12 +125,74 @@ input[type=submit] {  			/*test these "input ids" (on the form part*/
 	width: 100px;
 }
 
+h2 {
+	color: #FF6334;
+}
 
-.column {
-	background-color: Gainsboro;
-	border: 1px solid #666;
-	padding: 5px;
-	margin: 5px;
-	width: 20%;
+p {
+	color: yellow;
+}
+
+#list ul { 									/*contact.erb*/
+	font-size: 20px;
+	color: #FF6334;
+	list-style: none;
+}
+
+#list a { 									/*contact.erb*/
+	font-size: 20px;
+	color: White;
+}
+
+#list input { 									/*contact.erb*/
+	font-size: 14px;
+	color: #FF6334;
+	margin-left: 30%;
+	margin-top: 2%;
+	padding: 8px;
+	padding-right: 8px;
+	background-color: Pink;
+	border-radius: 5px;
+}
+
+#name h2 { 									/*show_contact.erb*/
 	float: left;
+}
+
+#form input{ 					/*show_contact.erb*/
+	color: #FF6334;
+	font-size: 15px;
+	background-size: 20%;
+	background-color: Pink;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#list_show a { 					/*show_contact.erb*/
+	position: absolute;
+	color: #FF6334;
+	font-size: 15px;
+	background-size: 100%;
+	background-color: Pink;
+	padding: 8px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#list_show input { 					/*edit_contact.erb*/
+	position: absolute;
+	color: #FF6334;
+	font-size: 14px;
+	background-size: 100%;
+	background-color: Pink;
+	padding: 6px;
+	padding-right: 10px;
+	padding-left: 8px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }

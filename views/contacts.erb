@@ -1,10 +1,14 @@
 <h2>Contacts Page</h2>
 
-<ol>
+<p>Please click on a Customer's name to view their details, and/or make changes.</p>
+
+<div id="list">
+<ul>
 <% @contacts.each do |contact| %>
   <li><a href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %></a></li>
 
 <% end %>
-</ol>
+</ul>
+</div>
 
 <!-- tells how the Contacts page will be laid out-->
